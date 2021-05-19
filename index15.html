@@ -25,21 +25,52 @@
         .bav {
             color: black;
         }
+
+        #navBarSearchForm input[type=text] {
+            width: 500px !important;
+        }
+
+        .bi-youtube {
+            color: red;
+        }
+
+        .cust{
+            color: black;
+        }
+
+        .cust span{
+            margin-left: 10px;
+        }
+
+        .cust i{
+            font-size: 1.1rem;
+        }
+
+        .selected i{
+            color: red; 
+        }
+
+        .selected{
+            background-color: lightgrey;
+        }
+
     </style>
 </head>
 
 <body>
-    
     <div>
         <nav class="navbar navbar-light bg-light fixed-top">
             <div class="container-fluid">
+
+
                 <a class="navbar-brand" href="#">
-                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    <i class="bi bi-youtube red" aria-hidden="true"></i>
                     YouTube
                 </a>
 
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control  " id="navBarSearchForm" type="search" placeholder="Search"
+                        aria-label="Search">
                     <button class="btn btn-outline-secondary" type="submit">
                         <i class="fa fa-search"></i>
                     </button>
@@ -58,132 +89,161 @@
 
     <div class="row margin-top-70">
 
-        <div class="col-1">
-            <div data-spy="scroll" data-offset="5"
-                STYLE="width:140px;line-height: 3em;overflow: scroll;border: thin #000;padding: 5px;height:300px;">
-                <nav id="navbar-example3" class="navbar navbar-light bg-light">
+        <div class="col-2">
+            <div>
 
-                    <nav class="nav nav-pills flex-column">
-                        <tr>
-                            <td>
-                                <li><a class="bav" id="item-1"><i class="fa fa-home"></i><span>Home</span></a></li>
-                            </td>
-                            <td>
-                                <li><a class="bav" id="item-1"><i class="bi bi-compass"></i><span>Explore</span></a>
-                                </li>
-                            </td>
-                            <td>
-                                <li><a class="bav" id="item-1"><i
-                                            class="bi bi-collection-play"></i>Subscription</span></a>
-                                </li>
-                            </td>
-                            <td>
-                                <li><a class="bav" id="item-1"><i class="bi bi-file-earmark-play"></i>Library</span></a>
-                                </li>
-                            </td>
-                            <td>
-                                <li><a class="bav" id="item-1"><i class="bi bi-stopwatch"></i><span>History</span></a>
-                                </li>
-                            </td>
-                        </tr>
-                    </nav>
-                </nav>
+
+                <ul class="nav flex-column">
+
+
+                    <li class="nav-item">
+                        <a class="nav-link cust selected" href="#">
+                            <i class="bi bi-house-door-fill"></i><span>Home</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link cust" href="#">
+                            <i class="bi bi-compass"></i><span>Explore</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link cust" href="#">
+                            <i class="bi bi-collection-play"></i><span>Subscription</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link cust" href="#">
+                            <i class="bi bi-file-earmark-play"></i><span>Library</span>
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link cust" href="#">
+                            <i class="bi bi-stopwatch"></i><span>History</span></a>
+                    </li>
+
+
+                </ul>
+
             </div>
         </div>
 
 
-        <div class="col-11">
+        <div class="col-10">
             <div class="container">
                 <!--<div class="col margin-right-70">-->
-                <div class="row row-cols-1 row-cols-md-4">
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                <div class="row row-cols-1 row-cols-md-4" max-width="18rem">
+                    <div class="col" width="420" height="315">
+                        <div class="card h-100">
+                            <iframe src="https://www.youtube.com/embed/HlBYdiXdUa8" title="YouTube video"
+                                allowfullscreen></iframe>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <h5 class="card-title">I Want It That Way | Brooklyn Nine-Nine</h5>
+                                <p class="card-text">Brooklyn Nine-Nine<br>
+                                    22M views
+                                    2 years ago
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                    <div class="col" width="420" height="315">
+                        <div class="card h-100">
+                            <iframe src="https://www.youtube.com/embed/cBTwuF3OcYQ" title="YouTube video"
+                                allowfullscreen></iframe>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <h5 class="card-title">5-Second Summaries with Andy Samberg</h5>
+                                <p class="card-text">The Tonight Show Starring Jimmy Fallon<br>
+                                    25M views
+                                    6 years ago
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                    <div class="col" width="420" height="315">
+                        <div class="card h-100">
+                            <iframe src="https://www.youtube.com/embed/_ZW-AZ2mNeA" title="YouTube video"
+                                allowfullscreen></iframe>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content.</p>
+                                <h5 class="card-title">Sarcasm 101 - SNL</h5>
+                                <p class="card-text">Saturday Night Live<br>
+                                    7.5M views
+                                    1 year ago
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                    <div class="col" width="420" height="315">
+                        <div class="card h-100">
+                            <iframe src="https://www.youtube.com/embed/L7iWXfZzEMc" title="YouTube video"
+                                allowfullscreen></iframe>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <h5 class="card-title">Castlevania Season 4 | Official Trailer | Netflix</h5>
+                                <p class="card-text">Netflix<br>
+                                    4.2M views
+                                    2 weeks
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <br>
                 <div class="row row-cols-1 row-cols-md-4">
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                    <div class="col" width="420" height="315">
+                        <div class="card h-100">
+                            <iframe src="https://www.youtube.com/embed/VVQB_M2f6xM" title="YouTube video"
+                                allowfullscreen></iframe>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <h5 class="card-title">Friends: Chandler's Most Sarcastic Moments (Mashup) | TBS</h5>
+                                <p class="card-text">TBS<br>
+                                    11M views
+                                    11 months ago
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                    <div class="col" width="420" height="315">
+                        <div class="card h-100">
+                            <iframe src="https://www.youtube.com/embed/D0-YFZHY9Uo" title="YouTube video"
+                                allowfullscreen></iframe>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <h5 class="card-title">The Rock Reacts to His First WWE Match: 20 YEARS OF THE ROCK</h5>
+                                <p class="card-text">The Rock<br>
+                                    4.6M views
+                                    5 years ago
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                    <div class="col" width="420" height="315">
+                        <div class="card h-100">
+                            <iframe src="https://www.youtube.com/embed/YszONjKpgg4" title="YouTube video"
+                                allowfullscreen></iframe>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content.</p>
+                                <h5 class="card-title">Learn CSS Animation In 15 Minutes</h5>
+                                <p class="card-text">Web Dev Simplified<br>
+                                    1.3M views
+                                    9 months ago
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-4">
-                        <div class="card">
-                            <img src="..." class="card-img-top" alt="...">
+                    <div class="col" width="420" height="315">
+                        <div class="card h-100">
+                            <iframe src="https://www.youtube.com/embed/YCoQwZ9BQ9Q" title="YouTube video"
+                                allowfullscreen></iframe>
                             <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in
-                                    to additional content. This content is a little bit longer.</p>
+                                <h5 class="card-title">British Airways safety video - director's cut</h5>
+                                <p class="card-text">British Airways<br>
+                                    18M views
+                                    4 years ago
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -201,8 +261,8 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/0b8105a7dc.js"></script>
-    
-     <script>
+
+    <script>
         var GoogleAuth;
         var SCOPE = 'https://www.googleapis.com/auth/youtube.force-ssl';
         function handleClientLoad() {
@@ -236,18 +296,18 @@
                 // Call handleAuthClick function when user clicks on
                 //      "Sign In/Authorize" button.
 
-              //  document.getElementById("sign-in-or-out-button").addEventListener("click", handleAuthClick);
+                document.getElementById("sign-in-or-out-button").addEventListener("click", handleAuthClick);
 
-                $('#sign-in-or-out-button').click(function () {
+                /*$('#sign-in-or-out-button').click(function () {
                   handleAuthClick();
-                });
+                });*/
 
-                //document.getElementById("revoke-access-button").addEventListener("click", revokeAccess);
+                document.getElementById("revoke-access-button").addEventListener("click", revokeAccess);
 
 
-                $('#revoke-access-button').click(function () {
+                /*$('#revoke-access-button').click(function () {
                   revokeAccess();
-                });
+                });*/
             });
         }
 
@@ -276,7 +336,7 @@
                 $('#auth-status').html('You are currently signed in and have granted ' +
                     'access to this app.');
             } else {
-                $('#sign-in-or-out-button').html('Sign-in');
+                $('#sign-in-or-out-button').html('Sign In/Authorize');
                 $('#revoke-access-button').css('display', 'none');
                 $('#auth-status').html('You have not authorized this app or you are ' +
                     'signed out.');
@@ -287,11 +347,10 @@
             setSigninStatus();
         }
     </script>
-   
     <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
         onreadystatechange="if (this.readyState === 'complete') this.onload()">
         </script>
-   
+
 </body>
 
 </html>
