@@ -78,8 +78,7 @@
 
                 <button type="button" class="btn btn-outline-info" id="sign-in-or-out-button">Sign-in</button>
 
-                <button id="revoke-access-button" type="button" class="btn btn-outline-secondary"
-                    style="display: none; margin-left: 25px">Revoke access</button>
+               
 
             </div>
 
@@ -302,7 +301,7 @@
                   handleAuthClick();
                 });*/
 
-                document.getElementById("revoke-access-button").addEventListener("click", revokeAccess);
+                //document.getElementById("revoke-access-button").addEventListener("click", revokeAccess);
 
 
                 /*$('#revoke-access-button').click(function () {
@@ -331,15 +330,17 @@
             var user = GoogleAuth.currentUser.get();
             var isAuthorized = user.hasGrantedScopes(SCOPE);
             if (isAuthorized) {
-                $('#sign-in-or-out-button').html('Sign out');
-                $('#revoke-access-button').css('display', 'inline-block');
-                $('#auth-status').html('You are currently signed in and have granted ' +
-                    'access to this app.');
+                document.getElementById("sign-in-or-out-button").innerHTML = "Sign out";
+          //      $('#sign-in-or-out-button').html('Sign out');
+          //      $('#revoke-access-button').css('display', 'inline-block');
+          //      $('#auth-status').html('You are currently signed in and have granted ' +
+          //          'access to this app.');
             } else {
-                $('#sign-in-or-out-button').html('Sign In/Authorize');
-                $('#revoke-access-button').css('display', 'none');
-                $('#auth-status').html('You have not authorized this app or you are ' +
-                    'signed out.');
+                document.getElementById("sign-in-or-out-button").innerHTML = "Sign in";
+            //    $('#sign-in-or-out-button').html('Sign In/Authorize');
+            //    $('#revoke-access-button').css('display', 'none');
+            //    $('#auth-status').html('You have not authorized this app or you are ' +
+            //        'signed out.');
             }
         }
 
