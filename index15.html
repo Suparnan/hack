@@ -341,6 +341,14 @@
     <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
         onreadystatechange="if (this.readyState === 'complete') this.onload()">
         </script>
+    
+        <script>
+
+    fetch('https:www.youtube.com/search?part=snippet&topicId=/m/05z1_&type=video&key=AIzaSyCP970XByNMEplWXnpk7oPsvmnxowEaGMw', { method: 'GET' })
+      .then(data => data.json())
+      .then(x => console.log(x));
+
+  </script>
 
 </body>
 
